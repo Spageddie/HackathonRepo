@@ -39,22 +39,21 @@ public class Scient {
 	    final HtmlAnchor linkeroo = page.getAnchorByHref(anchor);
 	    List<HtmlAnchor> anchors = new ArrayList<HtmlAnchor>();
 	    anchors = page.getAnchors();
-	   // System.out.println(linkeroo.getHrefAttribute());
-	    
+	    System.out.println(linkeroo.getHrefAttribute());
 	    
 	    System.out.println(linkeroo.click().getWebResponse().getContentAsStream());		
 	    
 		
 		
 		
-		
 		webClient.close();
 		
 		
+	
 		
 		//----------------------------------- Downloading File -------------------------------------------
 		
-		String filePart1 = "/Users/dtorn/Documents/Scient/Test_";
+		String filePart1 = "/Users/Eddie/Documents/Scient/Test_";
 		String filePart2 = "_Checksheet.pdf";
 		String fileName = filePart1 + Abb + filePart2;
 		
