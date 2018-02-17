@@ -3,8 +3,13 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="apcslib.jar"/>
+<<<<<<< HEAD
 	<classpathentry kind="lib" path="chnutil.jar"/>
 	<classpathentry kind="lib" path="chndocs.jar"/>
+=======
+	<classpathentry kind="lib" path="chndocs.jar"/>
+	<classpathentry kind="lib" path="chnutil.jar"/>
+>>>>>>> 2344fc13f3d2835ee067597b7af919102636675c
 	<classpathentry kind="lib" path="commons-codec-1.10.jar"/>
 	<classpathentry kind="lib" path="commons-io-2.6.jar"/>
 	<classpathentry kind="lib" path="commons-lang3-3.7.jar"/>
@@ -31,5 +36,9 @@
 	<classpathentry kind="lib" path="xalan-2.7.2.jar"/>
 	<classpathentry kind="lib" path="xercesImpl-2.11.0.jar"/>
 	<classpathentry kind="lib" path="xml-apis-1.4.01.jar"/>
+<<<<<<< HEAD
+=======
+	<classpathentry kind="lib" path="C:/Users/baile/Documents/2018Hackathon/ChecksheetApp/ChecksheetApp/lib/tika-app-1.17.jar"/>
+>>>>>>> 2344fc13f3d2835ee067597b7af919102636675c
 	<classpathentry kind="output" path="bin"/>
 </classpath>

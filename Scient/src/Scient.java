@@ -25,20 +25,15 @@ public class Scient {
 		
 		Abb= JOptionPane.showInputDialog("Enter the abbreviation of the major: ");
 		
-		String ancPart1 = "/content/dam/registrar_vt_edu/documents/Updates/coe/2019/coe_";
-		String ancPart2 = "_19.pdf";
-		
-		String anchor = ancPart1 + Abb + ancPart2;
-		
 		final WebClient webClient = new WebClient();
 		webClient.getOptions().setJavaScriptEnabled(false);
 		webClient.getOptions().setCssEnabled(false);
 		
 	    final HtmlPage page = webClient.getPage("https://registrar.vt.edu/graduation-multi-brief/checksheets/college/index.html");
-	    //"/content/dam/registrar_vt_edu/documents/Updates/coe/2019/coe_ae_19.pdf"
-	    final HtmlAnchor linkeroo = page.getAnchorByHref(anchor);
+	   
 	    List<HtmlAnchor> anchors = new ArrayList<HtmlAnchor>();
 	    anchors = page.getAnchors();
+<<<<<<< HEAD
 	    System.out.println(linkeroo.getHrefAttribute());
 	    
 	    System.out.println(linkeroo.click().getWebResponse().getContentAsStream());		
@@ -51,6 +46,29 @@ public class Scient {
 		
 	
 		
+=======
+	    List<String> anchzz = new ArrayList<String>();
+		for(int i=0; i<anchors.size(); i++)
+		{
+			anchzz.add(anchors.get(i).getHrefAttribute());
+		}
+		String findThis = "_" + Abb + "_";
+		String Href = "";
+		for(int i=0; i<anchzz.size(); i++)
+		{
+			if(anchzz.get(i).contains(findThis + "1") || anchzz.get(i).contains(findThis + "2"))
+				Href = anchzz.get(i);
+		}
+		
+		System.out.println(Href);
+		
+		final HtmlAnchor linkeroo = page.getAnchorByHref(Href);
+	    
+	    System.out.println(linkeroo.click().getWebResponse().getContentAsStream());		
+	    
+		webClient.close();
+
+>>>>>>> 2344fc13f3d2835ee067597b7af919102636675c
 		//----------------------------------- Downloading File -------------------------------------------
 		
 		String filePart1 = "/Users/Eddie/Documents/Scient/Test_";
