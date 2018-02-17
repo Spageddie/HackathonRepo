@@ -12,7 +12,7 @@ public class Checksheet {
     }
 
     /**
-     * changing things
+     * added this
      * @return
      */
     public LinkedList<Class> getListOfClasses() {
