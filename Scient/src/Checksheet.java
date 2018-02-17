@@ -27,7 +27,11 @@ public class Checksheet {
         return nameOfMajor;
     }
     
-    
+    /**
+     * adding stuff
+     * @param currentHoursTaken
+     * @return
+     */
     public int getRemainingNumberOfCreditHours(int currentHoursTaken) {
         return hours - currentHoursTaken;
     }
