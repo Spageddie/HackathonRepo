@@ -1,3 +1,6 @@
+package src;
+
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -54,7 +57,7 @@ public class Scient {
 		
 		//----------------------------------- Downloading File -------------------------------------------
 		
-		String filePart1 = "/Users/dtorn/Documents/Scient/Test_";
+		String filePart1 = "/Users/Eddie/Documents/Scient/Test_";
 		String filePart2 = "_Checksheet.pdf";
 		String fileName = filePart1 + Abb + filePart2;
 		

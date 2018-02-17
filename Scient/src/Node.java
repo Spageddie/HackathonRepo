@@ -1,4 +1,4 @@
-
+package src;
 
 /**
  * Represents a node in a singly linked list. This node
